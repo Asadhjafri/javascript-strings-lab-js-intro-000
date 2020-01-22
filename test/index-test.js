@@ -1,5 +1,4 @@
 /*global concatenatedString, describe, interpolatedString, it, myString */
-var assert = require("assert");
 it('defines `greeting`', function() {
   expect(greeting).toEqual("Hello, everybody!")
 })
@@ -9,5 +8,5 @@ it('concatenates strings to greet a special guest in `greetSpecialGuest`', funct
 })
 
 it('interpolates a string in `conversation`', function() {
-  assert.equal(conversation,`Let's talk about ${topic}.`)
+  expect(conversation).toEqual(`Let's talk about ${topic}.`)
 })
